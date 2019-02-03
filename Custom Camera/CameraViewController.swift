@@ -129,18 +129,20 @@ class CameraViewController: UIViewController {
     }
 
     func updateFlashButton() {
-        switch flashMode! {
-        case .auto:
-            flashButton.setImage(UIImage(named: "ic_flash_auto_white"), for: [])
-            break
-
-        case .on:
-            flashButton.setImage(UIImage(named: "ic_flash_on_white"), for: [])
-            break
-
-        case .off:
-            flashButton.setImage(UIImage(named: "ic_flash_off_white"), for: [])
-            break
+        DispatchQueue.main.async {
+            switch self.flashMode! {
+            case .auto:
+                self.flashButton.setImage(UIImage(named: "ic_flash_auto_white"), for: [])
+                break
+                
+            case .on:
+                self.flashButton.setImage(UIImage(named: "ic_flash_on_white"), for: [])
+                break
+                
+            case .off:
+                self.flashButton.setImage(UIImage(named: "ic_flash_off_white"), for: [])
+                break
+            }
         }
     }
 
@@ -236,7 +238,6 @@ class CameraViewController: UIViewController {
             device.unlockForConfiguration()
 
             self.capturePreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
-            self.capturePreviewLayer.frame = self.cameraContainerView.bounds
             self.capturePreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
 
             // Still Image Output
