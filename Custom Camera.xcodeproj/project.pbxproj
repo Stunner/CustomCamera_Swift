@@ -140,7 +140,6 @@
 				TargetAttributes = {
 					839799D11D295F0100FCBB75 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = TXV64D6H4A;
 					};
 				};
 			};
@@ -365,7 +364,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = TXV64D6H4A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Custom Camera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.brightec.Custom-Camera-Swift";
@@ -383,7 +382,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = TXV64D6H4A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Custom Camera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.brightec.Custom-Camera-Swift";
